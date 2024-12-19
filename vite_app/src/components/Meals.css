@@ -1,0 +1,139 @@
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+::selection {
+  background: #fcb69f;
+  color: white;
+  
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+.container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  /* Search bar styling */
+  .MuiOutlinedInput-root {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding-left: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .MuiOutlinedInput-root:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .MuiOutlinedInput-root input {
+    font-size: 1rem;
+    padding: 10px 15px;
+    color: #333;
+  }
+  
+  .MuiInputLabel-root {
+    font-size: 1rem;
+    color: #777;
+    font-weight: 500;
+  }
+  
+  .MuiInputLabel-root.Mui-focused {
+    color: #007bff !important;
+  }
+  
+  .MuiOutlinedInput-notchedOutline {
+    border-color: #ddd;
+  }
+  
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #007bff;
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Meal card grid */
+  .MuiGrid-container {
+    margin-top: 20px;
+  }
+  
+  /* Card styling */
+  .MuiCard-root {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .MuiCard-root:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card image */
+  .MuiCardMedia-root {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .MuiCardMedia-root:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card content */
+  .MuiCardContent-root {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .MuiTypography-body2 {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .MuiCardMedia-root {
+      height: 200px;
+    }
+  
+    .MuiCardContent-root {
+      padding: 15px;
+    }
+  
+    .MuiTypography-h6 {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+.banksearch{
+
+    height: 42px;
+    width: 500px;
+    margin: 30px 0px 0px 650px ;
+    font-size:18px;
+    border-radius: 10px;
+    padding-left: 15px;
+    
+}
+.fetch{
+    border-radius: 10px;
+    margin: 20px 0px 10px 0px;
+}
+li{
+    border:20px black;
+}
+
+
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 97vw;
+   
+  }
+  
+  .state-dropdown {
+    margin-bottom: 20px;
+  }
+  
+  .searchbar {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .searchbutton {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .div {
+    margin-top: 440px;
+  }
+  
+  .info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 15vw;
+    width: 65vw;
+    margin-top: -55vh;
+  }
+  
+  .loading {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .fetch {
+    margin: 10px 0;
+  }
+
+ 

@@ -1,0 +1,48 @@
+import React, { useState, useEffect } from "react";
+import { CircularProgress, Grid, Card, CardContent, Typography, Button } from "@mui/material";
+
+function Videos() {
+  const [meals, setMeals] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=")
+      .then((response) => response.json())
+      .then((data) => {
+        setMeals(data.meals || []);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <CircularProgress />;
+
+  return (
+    <div style={{ padding: 20 }}>
+      <Typography variant="h4" gutterBottom>
+        Meals Videos
+      </Typography>
+      <Grid container spacing={2}>
+        {meals.map((meal) => (
+          <Grid item xs={12} sm={6} md={4} key={meal.idMeal}>
+            <Card>
+              <CardContent>
+                <Typography variant="h6">{meal.strMeal}</Typography>
+                <Button
+                  href={meal.strYoutube}
+                  target="_blank"
+                  variant="contained"
+                  color="primary"
+                  sx={{ marginTop: 2 }}
+                >
+                  Watch Video
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </div>
+  );
+}
+
+export default Videos;

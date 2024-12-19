@@ -1,0 +1,94 @@
+.cocktails-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fcb69f;
+
+  }
+  
+  h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  ::selection {
+    background: #ffecd2;
+    color: white;
+  }
+  
+  button {
+    font-weight: bold;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+
+  .cocktails-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .cocktails-header h4 {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .search-input {
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .cocktail-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cocktail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cocktail-image {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+  }
+  
+  .card-content {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .cocktail-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cocktail-category {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .modal-image {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
